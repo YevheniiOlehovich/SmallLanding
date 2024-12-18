@@ -1,0 +1,12 @@
+.link{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.04px;
+    line-height: 13px;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
