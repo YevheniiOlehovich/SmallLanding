@@ -1,0 +1,24 @@
+.footer{
+    position: relative;
+    width: 1280px;
+    right: 50%;
+    height: 280px;
+    transform: translateX(50%);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 72px;
+        color: #fff;
+        text-align: center;
+    }
+    &__link{
+        background-color: #FFFF02;
+        color: black;
+    }
+}
