@@ -13,6 +13,9 @@
     @include m-laptop{
         width: 1024px;
     }
+    @include m-tablet{
+        width: 768px;
+    }
     &__title{
         font-weight: normal;
         font-size: 70px;

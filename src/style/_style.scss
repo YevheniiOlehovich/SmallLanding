@@ -12,8 +12,11 @@ body{
     @include m-laptop{
         width: 1024px;
     }
+    @include m-tablet{
+        width: 768px;
+    }
     @include m-phone{
-        max-width: 375px;
+        width: 375px;
     }
 }
 
@@ -45,6 +48,10 @@ body{
     line-height: 120px;
     color: #fff;
     text-align: center;
+    @include m-tablet{
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .text{
@@ -125,6 +132,10 @@ body{
     @include m-laptop{
         width: 1024px;
     }
+    @include m-tablet{
+        width: 768px;
+        height: 500px;
+    }
     &__content{
         width: 50%;
         padding: 222px 112px;
@@ -134,14 +145,23 @@ body{
         @include m-laptop{
             padding: 100px 60px;
         }
+        @include m-tablet{
+            padding: 50px 30px;
+        }
     }
     &__logo{
         width: 50%;
-        padding: 293px 57px;
+        // padding: 293px 57px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
         background-color: black;
         @include m-laptop{
-            padding: none;
+            
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
