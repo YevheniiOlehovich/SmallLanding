@@ -10,6 +10,9 @@
     padding: 60px 0;
     align-items: center;
     justify-content: space-between;
+    @include m-laptop{
+        width: 1024px;
+    }
     &__title{
         font-weight: normal;
         font-size: 70px;

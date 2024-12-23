@@ -26,12 +26,18 @@
             font-size: 20px;
             line-height: 32px;
             color: #0B0B0B;
+            @include m-laptop{
+                width: 25%;
+            }
         }
         &-event{
             width: 65%;
             font-size: 16px;
             line-height: 24px;
             color: #0B0B0B;
+            @include m-laptop{
+                width: 45%;
+            }
         }
         &-time{
             width: 15%;
@@ -39,6 +45,9 @@
             line-height: 24px;
             color: #0B0B0B;
             text-align: end;
+            @include m-laptop{
+                width: 30%;
+            }
         }
     }
 }

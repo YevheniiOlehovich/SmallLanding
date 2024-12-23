@@ -12,6 +12,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('img/intro_bg.png');
+        @include m-laptop{
+            width: 1024px;
+        }
     }
     &__content{
         position: relative;
@@ -23,5 +26,8 @@
         align-items: center;
         padding: 125px 0 146px;
         justify-content: space-between;
+        @include m-laptop{
+            padding: 60px 0;
+        }
     }
 }

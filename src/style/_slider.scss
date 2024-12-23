@@ -5,6 +5,9 @@
     transform: translateX(-50%);
     background-color: #0B0B0B;
     padding: 50px 20px 64px 20px;
+    @include m-laptop{
+        width: 1024px;
+    }
     &__title{
         margin-bottom: 60px;
         margin-left: 410px;
@@ -12,6 +15,10 @@
         font-size: 68px;
         line-height: 72px;
         color: #fff;
+        @include m-laptop{
+            margin-bottom: 40px;
+            margin-left: 200px;
+        }
     }
 }
 
