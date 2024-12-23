@@ -4,11 +4,13 @@ body{
 
 .wrapper{
     position: relative;
-    margin: 0 auto;
+    margin: 0;
     max-width: 1280px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
     @include m-laptop{
         width: 1024px;
     }
@@ -17,6 +19,7 @@ body{
     }
     @include m-phone{
         width: 375px;
+        margin: 0;
     }
 }
 
@@ -118,6 +121,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #0B0B0B;
+    &:hover{
+        border: 1px solid red;
+        transition: 0.4s ease-in-out;
+    }
     @include m-phone{
         width: 200px;
         height: 50px;
@@ -197,5 +205,20 @@ body{
 .column-direction{
     @include m-phone{
         flex-direction: column;
+    }
+}
+
+.link{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1.04px;
+    line-height: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-hover{
+    &:hover{
+        border-bottom: 1px solid white;
     }
 }

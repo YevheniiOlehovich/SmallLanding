@@ -1,9 +1,9 @@
 @import './libs/normalize';
 @import './style/_mixins';
 @import './style/_fonts';
-@import './style/selectors';
-@import './style/_style';
 
+@import './style/_style';
+@import './style/burger';
 @import './style/header';
 @import './style/_intro';
 @import './style/expirience';

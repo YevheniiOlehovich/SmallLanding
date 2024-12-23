@@ -48,3 +48,10 @@ highlights.forEach(item => {
 
     list.appendChild(li);
 });
+
+const menu = document.querySelector('.js-menu')
+const button = document.querySelector('.js-button')
+
+button.onclick = () => {
+    menu.classList.toggle('show-menu');
+};
