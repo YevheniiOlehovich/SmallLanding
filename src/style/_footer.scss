@@ -16,12 +16,19 @@
     @include m-tablet{
         width: 768px;
     }
+    @include m-phone{
+        width: 375px;
+    }
     &__title{
         font-weight: normal;
         font-size: 70px;
         line-height: 72px;
         color: #fff;
         text-align: center;
+        @include m-phone{
+            font-size: 22px;
+            line-height: 20px;
+        }
     }
     &__link{
         background-color: #FFFF02;

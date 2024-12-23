@@ -11,6 +11,9 @@
     @include m-tablet{
         width: 768px;
     }
+    @include m-phone{
+        width: 375px;
+    }
     &__title{
         margin-bottom: 60px;
         text-align: end;
@@ -21,6 +24,9 @@
         @include m-laptop{
             margin-bottom: 40px;
             font-size: 40px;
+        }
+        @include m-phone{
+            font-size: 22px;
         }
     }
 }
@@ -78,8 +84,11 @@
             padding: 400px 10px 10px 10px;
         }
         &:hover{
-            transform: translateY(-200px);
+            transform: translateY(-600px);
             transition: 0.4s ease-in-out;
+            @include m-tablet{
+                transform: translateY(-200px);
+            }
         }
     }
     &__title{
@@ -91,6 +100,10 @@
         @include m-tablet{
             font-size: 32px;
             line-height: 32px;
+        }
+        @include m-phone{
+            font-size: 22px;
+            line-height: 20px;
         }
     }
     &__text{
